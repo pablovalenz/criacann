@@ -1,0 +1,175 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Encode Sans",Arial,sans-serif;
+}
+.h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, li a, p a, table tbody a {
+    text-decoration: underline;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+fieldset, ol, p, table, ul {
+    font-weight: 500;
+}
+
+.navBar{
+    background-color: rgb(74, 187, 253);
+    display: flex;
+    align-items: center;
+}
+.navBar span{
+    font: 30px Arial, sans-serif;
+    padding-top: 15px;
+}
+.ul-destacadas li{
+    padding: 5px 80px 5px 5px;
+}
+
+.navBar2{
+    height: 35px;
+    background: rgba(0,0,0,.9);
+    font-size: 16px;
+    position: relative;
+    z-index: 3;
+}
+.hero{
+    width: 100%;
+    background-image: url(../assets/heroBg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+.hero.con::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right top, #05193799, #004d7a99, #00879399, #00bf7299, #a8eb1299);
+    z-index: -1;
+  }
+.hero h1{
+    font-size: 2rem;
+    text-shadow: 0 2px 2px rgb(0 0 0 / 50%);
+}
+.hero img{
+    padding-top: 10%;
+}
+.hero p{
+    font-size: 22px;
+    line-height: 29px;
+    text-shadow: 0 2px 2px rgb(0 0 0 / 50%);
+    margin-bottom: 15px;
+}
+.jumbotron.jumbotron_body{
+    padding: 40px 0;
+    position: relative;
+}
+
+.margin-20{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h2{
+    padding-left: 20%;
+}
+.panel-iconos{
+    padding: 1.5% 0;
+}
+.bg-gray{
+    background-color: #F2F2F2!important;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+
+.nav-icons i.fa:before, .nav-icons i[class^=icono-arg-]:before {
+    line-height: 80px;
+}
+.nav.nav-icons{
+    text-align: center;
+}
+
+
+element.style {
+}
+.nav>li>a {
+    text-decoration: none;
+}
+.pane-content{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-left: 10%;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav .nav-icons {
+    text-align: center;
+    
+}
+.nav.nav-icons li a {
+    font-weight: 500;
+    text-align: center;
+    width: 190px;
+    vertical-align: top;
+}
+main a:not(.btn) {
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+.nav.nav-icons li a i {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #555;
+    color: #fff;
+    line-height: 2.5;
+    font-size: 2em;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    transition: background .2s,color .2s,opacity .2s;
+}
+.nav-icons i.fa, .nav-icons i[class^=icono-arg-] {
+    line-height: 0;
+}
+.bg-lima {
+    background-color: #cddc39!important;
+}
+.bg-success {
+    background-color: #2e7d33!important;
+}
+[class*="icono-arg"] {
+    line-height: 1;
+}
+.icono-arg-hosting:before {
+    content: "\f50e";
+}
+.nav.nav-icons li a span {
+    font-size: 16px;
+    display: block;
+    color: #555;
+    transition: color .2s;
+}
